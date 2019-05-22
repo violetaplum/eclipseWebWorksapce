@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+*{margin:0px; padding:0px}
+/* 보통은 margin, padding은 적정양을 가지고 있다 */
+/* 둘을 0으로 맞추면 초기화가 된다 */
+
+#aa,#bb,#cc,#dd
+{
+width:300px;
+height:100px;
+background-color:pink;
+}
+
+#aa
+{overflow:hidden; /* overflow:hidden -> 주어진 범위가 오버되면 그냥 무시되는것 */
+}
+
+#bb > pre  /* bb id 밑에 있는 pre에 한해서 스타일 지정 */
+{color:red;
+overflow:scroll;	/* overflow:hidden -> 주어진 범위가 오버되면 스크롤이 생기는것*/
+}
+
+
+#cc
+{
+    overflow:visible; 
+}
+#dd
+{
+    overflow:auto;
+}
+</style>
+
+</head>
+<body>
+<div id="aa">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+    엄마야 누나야 강변살자
+    !아!  다여주!줘!
+		엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				</pre>
+</div>
+<div id="bb">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+					엄마야 누나야 강변살자
+				</pre>
+</div>
+
+<div id="cc">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+                    엄마야 누나야 강변살자
+                    ~아~~~ 래!래!
+				</pre>
+</div>
+
+<div id="dd">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+					엄마야 누나야 강변살자
+				</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- html문서 body에 margin:0, padding:0을 따로 지정하지 않으면 
+공간이 남는 부분이 있다. -->
+<style>
+body
+{
+margin:0;
+padding:0;
+}
+.krimja1
+{
+/* position:relative; */  /* absolute가 없으니 그냥 툭튀어나옴 */
+color:#777777;
+text-shadow:3px 3px 5px #FF0000;
+top:100px; left:100px;
+
+background-color:#00FF00;
+}
+
+.krimja2
+{
+position:relative; /* relative : 앞의 그림이 기준점위치가 된다. */
+color:#FF0000;
+background-color:#FFFF00;
+top:120px; left:100px;	/* relative 때문에 .krimja1으로부터 120,100만큼 */
+text-shadow:3px 3px 5px #FF0000;
+}
+
+</style>
+</head>
+<body>
+<div class="krimja1">position relative ~~~~~</div>
+<div class="krimja2">position relative ~~~~~~~</div>
+</body>
+</html>

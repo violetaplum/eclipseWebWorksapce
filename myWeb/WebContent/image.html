@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="jquery-3.2.1.js"></script><!-- jQuery import-->
+<script>
+  $(function(){
+	  $('img#yokeo').attr('height',1000)//attribute : 속성을 주겠다는 얘기. 여기서는 height를 정해줌
+	  $('img#keukeo').attr('height',90)//attribute
+	/* id : #, name : */ 
+  })
+  
+  /* script 태그 안에 jQuery문법을 끼워넣는 것임!! */
+</script>
+</head>
+<body>
+<img src="images/apple.jpg" width="200" id=yokeo>
+<!-- 여기에 id 대신 name 을 사용해도 되지만 id 는 jquery에서 사용되고 name은 html에서 사용되는 방식이다. -->
+
+<img src="images/orange.jpg" width="200" id=keukeo>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+h1{
+color:red; font-family:Serif,돋움,바탕,Sans-serif; /* 글씨체는 순서에따라 없으면 넘어감 */
+border:3px ridge blue;
+/* 		경계선 두께, 경계선디자인 경계선색 */
+/* 		경계선 디자인 : dashed double groove inset ridge outset solid */
+margin: 20px; padding:100px;
+text-shadow: 7px 5px 2px #ffff00;
+}
+h2{
+color:red;
+font-family:Serif,돋움,바탕, Sans-serif;
+border:3px dotted red; /* 경계선 두꼐 경계선 디자인 경계선 색 */
+border-radius: 20px;	/* 둥근 모서리 정도로 반지름 값 */
+text-shadow:5px 3px 5px #0000ff;
+}
+body
+{
+background-color:rgb(255,255,0);
+}
+
+</style>
+</head>
+<body align="center">
+<!-- 
+Do you know border?
+
+padding -> 글씨나 이미지등이 출력되는 내용부분
+		-> 내용과 경계선 사이
+border -> 경계선
+margin -> 다른 것과의 간격  margin을 처리 하느냐 안하느냐에 따라 box의 크기가 달라진다.
+(left margin, top margin, right margin, bottom margin)
+-->
+</body>
+
+<h1> 안녕 헤이즐</h1>
+<div style="font-weight:bolder;font-style:italic">두끼줍쇼</div>
+<!-- 
+font-weight:bolder    
+font_style:italic 
+-->
+
+<!-- 
+html 에서 style태그 형식을 사용
+nomal, bold, bolder, lighter  
+-->
+
+<h2 style="text-align:right">글자 정렬</h2>
+<h2 style="text-align:center">글자 정렬</h2>
+<h2 style="text-align:left">글자정렬</h2>
+<p style="text-indent:30pt"><=======이만큼 글자를 들여쓰기</p>
+<!-- text-indent : 들여쓰기 -->
+
+<p style="text-transform:capitalize">babo ondal</p>
+<p style="text-transform:uppercase">babo ondal</p>
+<p style="text-transform:lowercase">babo ondal</p>
+<!-- text-transform : capitalize, uppercase, lowercase  -> 영문의 글자 형태를 정해주기 -->
+
+<h2>   안녕 헤이즐2</h2>
+</html>

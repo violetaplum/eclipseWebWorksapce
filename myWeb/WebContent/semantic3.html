@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+<!--
+ 
+semantic tag 구조
+------------------
+	header
+------------------
+nav	section	aside
+	article
+	article
+------------------
+	footer
+------------------
+
+
+nav : navigation
+
+semantic tag(elements)란 : tag에 특별한 의미를 지정한것
+(ㅇㅖ) <header> 는 해드부분을 의미하고 헤더 지정시에 사용
+<header> : 헤더부분, <nav> : navigation(링크부분)
+<section> : 콘텐츠부분(h1~h6 제목사용)
+			<article> : 개별 콘텐츠 부분(h1~h6 제목 사용)
+<aside> : 옆면공간부분(광고등) , <footer> :아래부분(주소등)
+<main> : 메인콘텐츠를의미
+
+-->
+
+<header>
+<h1>과일주문</h1> <!--  검색로봇이 이것을 참조한다 -->
+<!-- 검색로봇이 header밑의 h1태그를 찾아간다. -->
+</header>
+
+<nav>
+<h1>메뉴</h1>
+<ul>
+<li><a href="#">사과메뉴</a></li>
+<li><a href="#">배메뉴</a></li>
+<li><a href="#">감메뉴</a></li>
+</ul>
+</nav>
+
+<section> <!-- section : 전체적인 컨텐츠를 말하는것 -->
+<h1>과일을 말씀드리면</h1>
+<article> <!-- article : 부분컨텐츠 -->
+<h1>맛평가</h1> 정말 맛있어요
+</article>
+<article><h1>가성비평가</h1> 가격대비 가성비도 맘에 들어요</article>
+</section>
+
+<footer>
+<address>나는 과수원주소구요</address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+*
+{
+margin:0px;
+padding:0px}
+/* 보통은 margin, padding은 적정양을 가지고 있다 */
+/* 둘을 0으로 맞추면 초기화가 된다 */
+
+h1:hover{color:yellow;
+background-color:blue;}   /* h1 태그 위에 마우스를 올려놓으면 색상이 바뀐다!! */
+
+h1+h3{color:violet;} /* adjacent:민접기법 */
+/* h1+h3 : 바로 뒤따라 나오는 h3가 있으면 색상을 violet으로 지정한다는 의미 */
+/* 바로 다음게 아니고 다다음부터는 색상이 바뀌지 않는다 */
+
+#aa,#bb
+{
+width:300px;
+height:100px;
+background-color:pink;
+}
+
+#aa
+{overflow:hidden; /* overflow:hidden -> 주어진 범위가 오버되면 그냥 무시되는것 */
+}
+
+#bb > pre  /* bb id 밑에 있는 pre에 한해서 스타일 지정 */
+{color:red;
+overflow:scroll;	/* overflow:hidden -> 주어진 범위가 오버되면 스크롤이 생기는것*/
+}
+
+
+/* 
+#cc
+{background-color:red;
+position:absolute;
+top:100px;
+left:100px;
+}
+ */
+</style>
+
+</head>
+<body>
+<h1>나 제목</h1>
+<h3>나도 제목</h3>
+<div id="aa">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+					엄마야 누나야 강변살자
+				</pre>
+</div>
+<h3>나도 제목</h3>
+<div id="bb">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+					엄마야 누나야 강변살자
+				</pre>
+</div>
+<!-- <div id="cc">
+<pre>
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+					엄마야 누나야 강변살자
+				</pre>
+</div> -->
+
+
+</body>
+</html>

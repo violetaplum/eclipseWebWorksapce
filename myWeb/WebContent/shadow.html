@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+*{font-family:"Comic Sans MS";}
+p{font-family: 돋움,바탕;
+	font-size:70px;}
+
+p.dala{font-color:pink;}
+/* 이런식으로 p따로 dala따로 하면 안먹힌다.. */
+
+
+body{
+font-family: 돋음,바탕;
+font-size: 50px;
+}
+.krimja1
+{
+color:#FF0000;
+text-shadow:3px 3px 5px #777777;
+/* 글자 그림자 : x쪽으로 이동 Y쪽으로 이동
+				blur(번짐 : 숫자가 클수록 더 번짐, 10만되도 너무 번진형태) 그림자색 */
+}
+
+
+div
+{
+color:#FF0000;
+font-size:20px;
+width:700px; height:30px;
+background-color:#FFFF00;
+box-shadow:10px 10px 3px #0000FF;
+}
+/* 이렇게 되면 div박스에 색상 또는 그림자가 생긴다 */
+
+
+</style>
+</head>
+<body>
+<p><span class="krimja1">글씨에 그림자 넣어볼까</span></p>
+<div>이번에는 박스에 그림자를 넣어볼까~~</div>
+<br><br><br>
+<div><span class="krimja1">좋다 넣어보자!!!</span></div>
+
+<p class ="dala">다르다고</p>
+<span class="dala">그렇다니깐</span><br>
+<!-- 글씨크기는 커지지만 글씨의 색은 pink가 되지 않는다. -->
+
+
+</body>
+</html>

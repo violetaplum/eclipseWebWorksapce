@@ -1,0 +1,29 @@
+<style>
+h1/* selector */
+{
+	color:red; text-align:center; text-decoration:underline
+}
+/* selector(선택자) {속성:값;속성:값}
+textdecoration : overline(윗줄),  line-through(취소선) */
+
+p
+{
+	color:blue;font-size:30pt;
+}
+/* p : 문단을 나눠준다. */
+
+.redred{color:red}
+/* 클래스(. 을 붙임, 자바 클래스와는 1도 안같음) */
+/* 클래스가 redred인것을 찾아서 색상을 red로 바꾸라는 명령어 */
+
+.red{color:blue; /* font:bold 50pt */}
+								/* 글이 날카, 몽툭 */
+#myid{color:green; font:bold 20pt Serif,Sans-serif}
+/* id : #붙어있는 이름, 사용시 #빼고 id를 사용
+font에서의 순서는 font-style font-size font-family,,,순
+font:style size family ...
+#myid {color:green; font-size:20pt} */
+
+
+
+</style>

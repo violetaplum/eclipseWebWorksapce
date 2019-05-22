@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<frameset border=0 rows="30%,*">
+	<frame src="topframe.html" name="top" noresize> 
+	<!-- 30%자리에 이게 들어감, 사이즈는   noresize -->
+	
+	<frameset border=0 cols="20%,80%"> 
+	<!-- cols=~ 는 왼쪽은 20%, 오른쪽으로는 80%를 차지한다는 얘기 -->
+	<!-- 상위 30%를 제외한 부분이 이 프레임에서 변경되게 된다. 따라서 frameset을 따로 설정해 준 것임 -->
+		<frame src="leftframe.html" name="left" noresize> 
+		<!-- 여기서는 이름이 left인게 들어간다. -->
+		
+		<!-- <frame src="about:BLACK" name="right" scrolling="yes"> -->
+		<frame src="about:BLACK" name="right3" scrolling="yes"> 
+		
+		<!-- 여기서는 이름이 right인게 들어감 -->
+		<!-- about:black은 아무것도 없는 곳에 black이 들어가게 된다. -->
+	</frameset>
+	<!-- <frame src="rightframe.html" name="right" scrolling="yes"> -->
+		<frame src="rightframe3.html" name="right3" scrolling="yes">
+</frameset>
+
+
+
+</html>

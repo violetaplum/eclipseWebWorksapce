@@ -1,0 +1,61 @@
+{
+    // The tab key will cycle through the settings when first created
+    // Visit http://wbond.net/sublime_packages/sftp/settings for help
+    
+    // sftp, ftp or ftps
+    "type": "ftp",
+
+    "sync_down_on_open": true,
+    "sync_same_age": true,
+    
+    "host": "example.com",
+    "user": "username",
+    //"password": "password",
+    //"port": "22",
+    
+    "remote_path": "/example/path/",
+    //"file_permissions": "664",
+    //"dir_permissions": "775",
+    
+    //"extra_list_connections": 0,
+
+    "connect_timeout": 30,
+    //"keepalive": 120,
+    //"ftp_passive_mode": true,
+    //"ftp_obey_passive_host": false,
+    //"ssh_key_file": "~/.ssh/id_rsa",
+    //"sftp_flags": ["-F", "/path/to/ssh_config"],
+    
+    //"preserve_modification_times": false,
+    //"remote_time_offset_in_hours": 0,
+    //"remote_encoding": "utf-8",
+    //"remote_locale": "C",
+    //"allow_config_upload": false,
+}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="hello.jsp">
+선택하세요
+<input type="radio" name="남자" value="남">남자
+<input type="radio" name="여자" value="여">여자
+<br>
+<!-- radio : 동그란 체크 -->
+<!-- 라디오는 끼리끼리 있어야 한다 따라서 value의 이름을 같게 하고 value로 구분해 주어야 한다. -->
+
+잘하는과목
+<input type="checkbox" name="java" value="java">java
+<input type="checkbox" name="jsp" value="jsp">jsp
+<input type="checkbox" name="html" value="html">html
+<!-- checkbox : 네모난 체크 -->
+<!-- 이름이 같은것끼리 있어야 한다. -->
+<!-- 이것도 역시 구분은 value가 해준다. -->
+
+</form>
+</body>
+
+</html>

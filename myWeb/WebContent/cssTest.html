@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+
+<link rel="stylesheet" type="text/css" href="jeoki.css">
+<!-- 가능한한 이런 방식으로 사용하는 것이 좋다 -->
+<!-- html, css를 구분해 줄 수 있게 되기때문에 나누는 것이 좋다. -->
+<!-- link 때문에 css파일이 import 되어 들어온다 -->
+
+
+<!-- 스타일에 주석을 담.. -->
+
+
+
+
+
+
+
+<!-- 
+<style>
+h1/* selector */
+{
+	color:red; text-align:center; text-decoration:underline
+}
+/* selector(선택자) {속성:값;속성:값}
+textdecoration : overline(윗줄),  line-through(취소선) */
+
+p
+{
+	color:blue;font-size:30pt;
+}
+/* p : 문단을 나눠준다. */
+
+.redred{color:red}
+/* 클래스(. 을 붙임, 자바 클래스와는 1도 안같음) */
+/* 클래스가 redred인것을 찾아서 색상을 red로 바꾸라는 명령어 */
+
+.red{color:blue; /* font:bold 50pt */}
+								/* 글이 날카, 몽툭 */
+#myid{color:green; font:bold 20pt Serif,Sans-serif}
+/* id : #붙어있는 이름, 사용시 #빼고 id를 사용
+font에서의 순서는 font-style font-size font-family,,,순
+font:style size family ...
+#myid {color:green; font-size:20pt} */
+
+
+
+</style>
+ --><!-- <font style="" : html 을 사용하면서 추가적인 디자인이 들어간다는 의미 -->
+<!-- 하지만 style 태그를 아예 사용해버리면 
+태그 사이에 있는 것이  css가 된다. -->
+
+</head>
+<body>
+
+<h1>난 red색이지 말입니다.</h1>
+<font color="pink">html로 디자인</font>
+<br>
+
+<h2 class="redred" >뭐야 으응 .은 클래스구나 그래서  red네</h2>
+<div class="red"><h2>무임 얘도 class  사용했네?</h1></div>
+<!-- class사용, 사용시 .태그 class="클래스 이름" 형식으로 사용 -->
+<span id="myid">뭐야 응ㅇ #은 id이구나 크기는 20</span>
+<!-- id 사용 -->
+
+</body>
+</html>
+
+
+
+<!-- css 3.0
+
+cascading style sheet MVC에서 디자인
+
+<style>태그를 사용
+
+selector{속성:값; }
+
+주석은 자바와 똑같
+
+ -->

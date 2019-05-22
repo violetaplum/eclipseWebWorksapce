@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body bgcolor="blue">
+<!-- method : 서버에 있는 hello.jsp를 찾아감 기본이 get방식이므로 안써도됨 -->
+<form action="hello.jsp" method="get">
+
+<!-- <form action="hello.jsp" method="post"> --> 
+						<!-- post 방식은 내가 입력한 값이 url에 보이지 않게 해준다. -->
+
+<!-- form action : hello.jsp로 찾아가게 한다. -->
+<!-- 끝나면 바로 jsp로 보내져서 화면이 바뀐다... -->
+<fieldset>
+<legend>이름입력</legend>   <!-- 입력부분을 그룹화, div참조 -->
+
+<ul>
+<li><label for="name"> name</li>
+<!-- gui: textfield -->
+<li><input type="text" name="irum"
+					autofocus required placeholder="GoGo insert name"></li></label>
+<li><input type="submit" value="Let's go"></li>
+<li><input type="rest" value="Calcel~~~"></li>
+</ul>		<!-- type="button" -->
+
+</fieldset>
+		<!-- fieldset : 네모칸 생김 -->
+</form>
+</body>
+</html>

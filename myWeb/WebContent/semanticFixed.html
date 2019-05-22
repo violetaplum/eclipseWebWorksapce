@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+*
+{
+margin:0px;
+padding:0px}
+/* 보통은 margin, padding은 적정양을 가지고 있다 */
+/* 둘을 0으로 맞추면 초기화가 된다 */
+
+#aa,#bb,#cc
+{
+width:300px;
+height:100px;
+}
+
+#aa
+{background-color:pink;
+position:static; /* 그냥 처음부터 튀어나오는거 */
+}
+
+#bb
+{background-color:blue;
+position:relative; /* 상위 요소로부터 상대적 */
+top:0px;  /* 아예 위에 있어야 하는데 앞의 그림을 기준으로 해서 0px이므로
+			살짝 내려와 있다. */
+left:300px;
+}
+
+#cc
+{background-color:red;
+position:fixed;
+top:0px;
+left:0px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="aa">
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+</div>
+<div id="bb">
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+</div>
+<div id="cc">
+엄마야 누나야 강변살자
+	엄마야 누나야 강변살자
+		엄마야 누나야 강변살자
+			엄마야 누나야 강변살자
+				엄마야 누나야 강변살자
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+.krimja1{
+position:absolute; /* 절대번지 */
+color:#777777;
+text-shadow:3px 3px 5px #FF0000;
+top:100px; left:100px;
+/* (0,0)에서 시작하여 위에서 100px, 왼쪽에서 100px 떨어진 곳 */
+background-color:#00FF00;
+}
+.krimja2
+{
+position:absolute; /* top, left에 의해 위치가 정해진다 */
+color:#FF0000;
+background-color:#FFFF00;
+top:120px; left:100px;		/* 결국 top이 y좌표, left가 x좌표가 된다 */
+text-shadow:3px 3px 5px #777777;
+}
+
+</style>
+</head>
+<body>
+
+<div class="krimja1">position absolute ~~~~~</div>
+<div class="krimja2">position absolute ~~~~~~~</div>
+</body>
+</html>

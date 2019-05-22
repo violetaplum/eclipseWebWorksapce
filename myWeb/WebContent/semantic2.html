@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+/* 
+inline element(줄바꿈 아닌 가로로 진행하는)
+(예) b, textarea, span, image를		줄바꿈이 없으면 가로로간다는 의미
+
+block element(줄바꿈형태)
+(예) p, pre, audio, div h1등.. */
+body
+{
+margin:0px;
+padding:0px;}
+
+#head1
+{
+width:100%;/*  가로는 꽉차고 높이는 50px만큼만 */
+height:50px;
+background-color:cyan;
+}
+#menu1
+{
+float:left; /* left이므로 무조건 다음은 오른쪽으로 흘러가는데 */
+width:20%; 	/* width를 20%로 정했기 때문에 화면이 움직이면 너비가 그에 맞춰 움직인다 */
+height:300px;
+background-color:pink;
+}
+/* menu, content 의 width를 합치면 왼쪽 오른쪽에서부터
+float에 의해 흘러와 100%를 채우고 있다 */
+#content1
+{
+float:right; /* menu는 왼쪽으로 붙어서 오른쪽으로 흘러가고 */
+				/* content는 아예 오른쪽에서 붙어서 오는것으로 함 */
+width:80%;
+height:300px;
+background-color:yellow;
+}
+#foot1
+{
+float:left;
+width:100%;  /* 이렇게 해도 되고 */
+clear:both;  /* 이렇게 하면 좌우 끝까지 다 채운 블럭 개념이 된다. */
+/* clear:both;
+위에서 잡아주었던 left,right를 무시한다는 의미
+ */
+height:100px;
+background-color:green;
+}
+
+</style>
+</head>
+<body>
+<div>
+<div id="head1"><img src="krim/fox.jpeg" width=10% height=200px>나는 헤드 부분</div>
+<div id="menu1">나는 메뉴 부분</div>
+<div id="content1">나는 내용이 나오는 부분</div>
+<div id="foot1">나는 맨 아래 주소등이 나오는  부분</div>
+
+
+</div>
+</body>
+</html>

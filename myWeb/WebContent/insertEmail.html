@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="hello.jsp">   <!--  가자서버로 버튼을 누르면 hello.jsp페이지로 넘어간다. -->
+<fieldset>
+<legend>이메일을 입력하자</legend>
+<ul>
+<li>
+<label for="email">이메일을 입력하세요</label>
+<input type="email" name="email" required="required" 
+placeholder="a@a.com" multiple>
+<!-- multiple : 이메일 주소 목록을 , 로 구분하여 2개이상 집어넣을 수 있는 기능 -->
+<!-- multiple : 이메일주소를 , 구분   //  파일 여러개 업로드 해야할때 사용 -->
+<!-- 메일주소 등록 -->
+</li>
+<li>
+<input type="submit" value="가자 서버로"></li>
+</ul>
+</fieldset>
+</form>
+</body>
+</html>

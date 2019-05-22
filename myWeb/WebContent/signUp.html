@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow" text="blue">
+
+<h1>동아리 가입을 위한 나의 모든것</h1>
+<form action="hello.jsp">
+
+<label for="name">이름</label>
+<input type="text" name="name" value="경석이" required="required" placeholder="a@a.com" multiple>
+<!-- readonly : 수정은 안되고 submit하면 "경석이"가 서버로 감 -->
+
+<label for="pass">비밀번호</label>
+<input type="password" name="pass" size=22 maxlength=15>
+<br>
+<br>
+<!-- size : 입력란에 한번에 보여지는 문자 개수의 최대길이 -->
+<!-- maxlength : 입력란에 넣을 수 있는 문자의 최대 길이 -->
+
+<label for="tel">전화번호</label>
+<input type="tel" name="tel" >
+<br>
+<br>
+
+<label for="email">이메일</lebal>
+<input type="email" name="email" required="required" 
+placeholder="a@a.com" multiple>
+<br>
+<br>
+
+<label for="local_time">현재local time</lebal>
+<input type="datetime-local" name="local_time" >
+<br>
+<br>
+
+<label for="yeardate">생일월년</label>
+<input type="date" name="yeardate" >
+<br>
+<br>
+
+<label for="no">생일년월일 2000이상 가입안됨</label>
+<input type="date" name="no" min="1900-01-01" max="1999-12-31">
+<!-- input type="date" 일때 min, max를 지정하여 년도를 지정해 주면 된다. -->
+<br>
+<br>
+
+<label for="birth_week">생일은 1년중 몇번째주</label>
+<input type="week" name="birth_week" >
+<br>
+<br>
+
+<label for="birth">태어난시간</label>
+<input type="datetime" name="birth" >
+<br>
+<br>
+
+<label for="like_color">좋아하는 색</label>
+<input type="color" name="like_color" >
+<br>
+<br>
+
+<label for="like_number">좋아하는 숫자(0-100,10단위)</label>
+<input type="number" name="like_number" min="0" max="100" step="10">
+<!-- number : 숫자입력, spin control -->
+<br>
+<br>
+
+<label for="char">성격(내향적-외향적)</label>
+<a>&nbsp;</a>
+<a>내향적</a><input type="range" name="char" min="내향적" max="외향적" step="10"><a>외향적</a>
+<br>
+<br>
+
+<label for="score">성적</label>
+<a>&nbsp;</a>
+<a>0점</a><input type="range" name="score" min="0" max="100" step="10"><a>100점</a>
+<br>
+<br>
+
+<label for="homepage">니의 홈페이지 주소</label>
+<input type="url" name="url">
+<!-- http://가 없으면 입력하라고 함 -->
+
+<label for="search">검색</label>
+<br>
+<input type="search" name="search" placeholder="검색할 것 입력">
+<!-- 크롬이나 사파리에서, 뒤에 x 가 나타남  -->
+<br>
+<br>
+
+<input type="submit" value="가자 서버로">
+<br>
+<br>
+
+
+<select name="selectTag">
+<option value="1">첫번째 옵션</option>
+<option value="2">두번째</option>
+<option value="3">세번째</option>
+<option value="4">네번째</option>
+
+</select>
+
+
+
+
+</form>
+</body>
+
+</html>

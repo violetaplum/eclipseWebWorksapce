@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<!-- html5의 정보 알려면 검색에 w3c html5 열람 -->
+<!-- html을 실행시키는 원리는?:
+compile / interpreter
+(java)		(html)	실행시 컴파일  (번역기는 browser안에 있음)
+미리 기계어로 만드는것
+수정시 다시 컴파일한번
+
+<!-- 속성=값     배경색은 노랑, 글자는 파랑 -->
+<!-- 기본적으로는 파란색 글씨가 나오지만 특별히 글자의 속성을 바꿔야 할 시 <font> 사용 -->
+<body bgcolor="yellow" text="blue">
+<font color="red" size=10>오늘 비오는감? :) @>===~~~ </font>
+비 지금도 옴~~<br>
+<!-- 글자에 뭔짓을 한거야 -->
+<h> 어느 구름에서 비올지 몰라</h><br> <!-- bold -->
+<i>어느구름에서 비가올지 몰라</i><br> <!-- italic -->
+<blink>어느구름에서 비올지 몰라</blink><br> <!-- 사용안함 -->
+<u>어느 구름에서 비올지 몰라</u><br><!--  underline -->
+<strike>어느 구름에서 비올지 몰라</strike><br> <!-- 취소선 -->
+<code>어느<sub>구름에서</sub><sub>비올지</sub></code> <!-- typing 글씨체 -->
+
+y=0<sup>2</sup>
+
+y=log<sub>10</sub>
+<!-- h태그 -->
+<h1><code>제목과 내용의 크기를 다르게</code></h1>
+<h2>제목과 내용의 크기를 다르게</h2>
+<h3>제목과 내용의 크기를 다르게</h3>
+<h4>제목과 내용의 크기를 다르게</h4>
+<h5>제목과 내용의 크기를 다르게</h5>
+<h6>제목과 내용의 크기를 다르게</h6>
+
+엄마야 누나야<br>
+강변살자<p>
+물에는 반짝이는 골드로저<br>뒷문밖에는 달님의 노래<br>
+엄마야누나야<br>
+강변살자<p>
+
+
+<p align='center'>내가 정기고자한노래를부러전<br>
+나는 소유처럼...(written by 김정)</p>
+<p align='right'>내가 정기고자한노래를부러전<br>
+나는 소유처럼...(written by 김정)</p>
+<p align='left'>내가 정기고자한노래를부러전<br>
+나는 소유처럼...(written by 김정)</p>
+
+
+<center>삶이 그대를 속일지라도<br>
+슬퍼하거나 노여워 말라(?)</center>
+
+
+<!-- <pre> : 써있는 그대로 출력하라 -->
+<pre>
+쓰레기는 나정이와 병원에서 만났다
+그런데 전처럼 다정할 수 없었다
+나정이가 1년동안 해외에서 근무하다보니
+다른 연인들처럼 그렇게 서로가 멀어져 갔었던 것이다.
+</pre>
+
+<marquee direction="left">
+<h1>다음역은 종로3가</h1></marquee>
+<marquee direction="right" behavior="scroll">	<!-- marquee area 범위  나가면서 반대방향으로 다시 들어옴-->
+<h1>다음역은 종로3가</h1></marquee>
+<marquee direction="right" behavior="slide">	<!-- 화면area slide후 멈춤  반복출력되지 않음-->
+<h1>다음역은 종로3가</h1></marquee>
+<marquee behavior="alternate"> <!-- 왓다갔다 -->
+<h1>커피 1+1 행사, 조금있으면 행사 끝</h1></marquee>
+<marquee behavior="scroll" loop=5>
+<h1>커피 1+1 행사, 조금있으면 행사 끝</h1></marquee>
+<marquee behavior="scroll" scrollamount="50"> <!--50픽셀씩 -->
+<h1>커피 1+1 행사, 조금있으면 행사 끝</h1></marquee>
+<marquee width=800 height=200 bgcolor="pink"
+behavior="scroll" scrolldelay=30><h1>커피 1+1행사 , 조금있으면 행사 종료</h1></marquee>
+<!-- 스크롤 가로세로 영역 스크롤이 이동속도 30 (1/1000초) -->
+</body>
+</html>
