@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+window.alert("hello javascript)  /* 앞의 window객체(browser 객체 ; BOM 객체)는 생략이 가능하다 */
+// alert("안녕 자바스크립트 )==> 이경우 "없어 에러
+// *실행시 화면무반응이면 브라우저에서 -마오-검사-우상단 액박클릭
+document.write("<h1> Hi too</h1>")/* 	원래는 html에 javascript를 넣었었는데 반대로 넣을때 이렇게 넣는다. */
+var irum = prompt("what's your name? ", "Jang Hee Soo")
+// prompt(dialog,input text) : dialog 가 팝업에 뜨고 입력창에는 기본값으로 jangheesoo가 들어가 있는데 다른 입력도 가능
+// var ==> javascript의 자료형, python 의none type과 비슷
+// prompt에 입력한 값이 irum에 들어가게 된다.
+
+
+document.write("your name is : ",irum," !!"+"<br>")
+document.write("your name is : "+"\t"+irum+"\t !!"+"<br>") /*  \t이 원하는만큼 잘 떨어지진 않음.. */
+/* document.write : sysout과 같음 */
+/* document는 window의 하위객체.. ==> document 범위 글씨가 써지는 하얀부분 */
+var today = new Date()
+// new Date() : 내장객체
+
+document.write(today+"날짜만 출력하면 "+today.getDate())
+// Date.getDate() : 날짜만 출력
+</script>
+
+</body>
+</html>

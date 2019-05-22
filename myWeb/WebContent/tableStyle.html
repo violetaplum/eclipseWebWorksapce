@@ -7,12 +7,16 @@
 <style>
 table,td,tr
 {border:10px solid green;
-padding:30px 20px 10px 5px;
+padding:30px 20px 10px 5px; /* top right bottom left 순서  -> 시계방향이다*/
+    /* top right
+       bottom left   으로 값을 두개만 주면 반복적용되는 방법이다*/
+/*     auto 20px 면 위아래 간격은 알아서 맞추고 좌우간격은 정확히 20px을 맞추는것 */
 margine:50px;
 }
 #aa
 {
-border-collapse:separator;
+border-collapse:separate;
+ /*  separate, collapse, initial, inherit */
 border-spacing:20px;
 margin:0px;
 }

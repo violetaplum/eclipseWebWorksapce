@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<script>
+// site소개 : html+css+javascript+dom = dhtml (dynamic html)
+// dhtml : ms ==> DOM Script용어를 사용함
+// xhtml <== html 4.0 , 사라짐
+// www.dhtml.com ==> www.dhteumeuleu.com
+// 자스는 동작을 담당 : 이벤트
+function kaja()
+{
+	document.write("안녕 자스4") 
+// 	웹페이지 로딩중에는 먼저 출력, but 다 로딘된 후에는 먼저 것 다 지우고 출력
+	alert("안녕 자스 구만!!!!") /* 우선순위 */
+	document.write("안녕 자스4-2")
+	alert("안녕자스4~2구만") /* 우선순위 */
+	
+	
+// 	나중에는 document.write의 내용만 화면에 출력되고 다 지워짐
+	}
+
+</script>
+<body>
+나도 글자다1
+<input type="button" value="눌러봐" onclick="alert('hello!?')"> 
+                      <!-- 이벤트 사용하면 script안쓰고 input tag안에 그냥 선언해도 된당.. -->
+<input type="button" value="press" onclick="kaja()">
+<!-- 주의 : <script>태그 없음 -->
+나도 글자다2
+</body>
+</html>
