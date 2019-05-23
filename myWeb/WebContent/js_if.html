@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset = "EUC-KR">
+	<meta charset = "UTF-8">
 </head>
 <script>
 /* 
  나이를 입력받아 19~60이면 "환영합니다"
 그렇지 않으면 "회원이 불가능합니다." */
 
+// VAR : 지역변수 , 함수밖에 선언돼있으면 전역변수
+// 안쓰면 : 중간에 있더라도 전역변수
 
-var na2
+var na2   /* 이부분 생략해도 에러가 발생하지 않는다 */
+
 // 아래 일부러 틀리게 침
-na2 = prompt("회원번호 앞 2자리는 ",35)
-/* alert(typeof na2) */	/* typeof연산자 : "35"  string */
-/* alert(typeof 35) */	/* number */
+na2 = prompt("회원번호 앞 2자리는 ",35)  
+ alert(typeof na2) 	/* typeof연산자 : "35"  string */
+ alert(typeof 35) 	/* number */
 
-if(na2>="60") /* na2>="60" */
+if(na2>="60") /* na2>="60" : 숫자로 바꾸어서 자동으로 인식해준다 */
 {
 	alert("실버반으로 가세요")
+	
 }
 else if(na2>=20)
 {
 	alert("골드반으로 가세요")
+	
 }
 else
 {
-	laert("푸른반으로 가세요")
+	alert("푸른반으로 가세요")	
 }
+ var aa=30
+	bb=31
+ function add(aa,bb)
+ {
+	 alert(aa+bb)
+ }
+ 
+ 
+ 
+ 
+alert(aa) //전역변수 테스팅하는 alert
+alert(bb)
 	</script>
 	<body>
 	</body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+var jum = prompt("점수는",93)
+
+if(jum==null)
+{
+	alert("취소하셨네요") //버튼이 확인 과 취소버튼 두개가 있는데 그것에 대한 처리
+}
+else
+{
+	jum=Math.floor(jum/10) // "80"/10을 해도 에러가 나지 않는다.. -> 나누기 하면서 숫자로 처리함
+}
+
+/* 사실 js에도 parseInt()가 있다 */
+
+switch(jum)
+{
+case 10: //alert("A")
+case 9 : alert("A") ; break
+case 8 : alert("B") ; break
+case 7 : alert("C") ; break
+case 6 : alert("D") ; break
+case 5 : case 4 : case 3 : case 2 : case 1 : case 0:
+	alert("F");break
+	default:alert("잘못눌르셨네요");break;
+}
+
+</script>
+</head>
+<body>
+<h1>점수를 학점으로 만들면!?</h1>
+</body>
+</html>
