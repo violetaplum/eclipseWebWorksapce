@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "EUC-KR">
+</head>
+<script>
+/* 
+ 나이를 입력받아 19~60이면 "환영합니다"
+그렇지 않으면 "회원이 불가능합니다." */
+
+
+var na2
+// 아래 일부러 틀리게 침
+na2 = prompt("회원번호 앞 2자리는 ",35)
+/* alert(typeof na2) */	/* typeof연산자 : "35"  string */
+/* alert(typeof 35) */	/* number */
+
+if(na2>="60") /* na2>="60" */
+{
+	alert("실버반으로 가세요")
+}
+else if(na2>=20)
+{
+	alert("골드반으로 가세요")
+}
+else
+{
+	laert("푸른반으로 가세요")
+}
+	</script>
+	<body>
+	</body>
+	</html>
