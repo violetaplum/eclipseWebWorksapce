@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+  <script>
+			var bae = [ 10, 300, 20, 40, 50 ]
+			document.write(bae[0] + "<br>")
+
+			bae.sort(function(aa, bb) {
+				return aa - bb
+			}) //오름차순 
+
+			document.write(bae + "<br>")
+
+			var bae2 = [ 10, 300, 20, 40, 50 ]
+
+			bae2.sort(function(x, y) {
+				return y - x
+			}) //내림차순
+			
+			document.write("<br>" + bae2)
+		</script>
+</body>
+</html>

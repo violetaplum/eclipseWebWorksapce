@@ -6,21 +6,26 @@
 
 </head>
 <body>
-<h1>구구단 중 3단만</h1>
+<h1>구구단</h1>
 <script>
 // 전체적으로 html+javascript
-document.write("<table border='2'>") /* js문장에서는 */
+document.write("<table border='3'>") /* js문장에서는 */
                   					/* js+html */
 
+var i
+
+for(i=2;i<=9;i++)
+{
+document.write("<tr><td colspan=2>"+i+"단"+"</td></tr>")
+// 몇단인지 알려주는 부분에서는 colspan을 사용하여 셀을 합쳐준다
 var j
 for(j=1;j<=9;j++)
-  {
+ {
   document.write("<tr align='center'><td>")
-  document.write("3 * "+j+" =  </td> <td>"+ 3*j + "</td></tr>")
-  }
-  document.write("</table>")
-  
-
+  document.write(i+" * "+j+" =  </td> <td>"+ i*j + "</td></tr>")
+ }
+}
+document.write("</table>")
 </script>
 </body>
 </html>

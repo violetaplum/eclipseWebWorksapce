@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>Random Number</h1>
+  <h1>Or Lottery Numbers..</h1>
+  <script>
+			var i
+			var array1 = new Array();
+			for (i = 0; i < 6; i++) {
+				array1[i] = parseInt(Math.random() * 100 + 1)
+			}
+			var color = [ "red", "blue", "orange", "black", "violet", "pink" ]
+
+			for (i = 0; i < 6; i++) {
+				document.write("<h1>")
+				document.write("<font color="
+						+ color[parseInt(Math.random() * 6 + 1)] + ">"
+						+ array1[i] + "</font>")
+				document.write("</h1>")
+			}
+
+			document.write("<h1>" + array + "</hr>")
+		</script>
+
+</body>
+</html>

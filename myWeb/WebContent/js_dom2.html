@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function kaja() {
+		alert(document.form1.irum.value) //이런계층구조만 있다 //얘때문에 글상자에 값을 넣으면 alert해줌
+		alert(document.span1) //undefined  //이런경우가 자스에 없다
+	}
+</script>
+</head>
+<body>
+  <form name=form1>
+    <input type="text" name="irum">
+    <br>
+    <input type="button" value="눌러봐" onclick="kaja();"> <!-- onclick같은 이벤트는 스크립트를 쓸 수 있음 -->
+    <br>
+  </form>
+  <span name=span1 style="position: absolute;">
+    <img src="krim/fox.jpeg" border="0">
+  </span>
+</body>
+</html>
