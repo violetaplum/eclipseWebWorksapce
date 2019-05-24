@@ -7,13 +7,14 @@
 	//객체, 속성=값 --> 객체, 이벤트 = 이벤트처리함수
 	document.onmousemove = function() {
 		// 		  그림좌표(100) <== 마우스좌표(100)
+		
 		document.getElementById("f1").style.left = event.clientX + "px" //px입력
-// 		document.getElementById("f1").style.top = event.clientY + "px"
-    document.all.f1.style.top=event.clientY+"px"
+ 		document.getElementById("f1").style.top = event.clientY + "px"
+    
 		// 		f1이란 이름의 span태그를 객체로 만들어서 객체.속성=값  의 구조로 만든다.
 		// event.clientX , event.clientY : 마우스의 x,y좌표
 		
-
+	/*document.all.f1.style.top=event.clientY+"px"*/
 	}
 	// html중에서의 ID : 	DOM에서 접근하기 위해 정해주는 이름이 된다.
 </script>
@@ -21,7 +22,6 @@
 <body>
 
   <!-- window.screen.width   window.screen.height -->
-
   <span id="f1" style="position: absolute;">
     <img src="krim/fox.jpeg" border="0" id="krim" width="50px" height="80px">
   </span>

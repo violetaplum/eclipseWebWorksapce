@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<script>
+	
+	function mut1()
+	{
+		alert("멋있어1")
+	}
+	function mut2()
+	{
+		alert("멋있어2")
+	}
+	function sa()
+	{
+		alert("사랑해")
+	}
+	function ebbu()
+	{
+		alert("이~~뻐")
+	}
+	function kajaCancel()
+	{
+		/*event.stopPropagation , event.cancelBubble=true/false : browser에 따라 다르다.
+
+		*/
+		if(event.stopPropagation)
+		{
+			/*stopPropagation을 사용가능해, 표준형*/
+			event.stopPropagation(); /*FF chrome*/
+			//버블링을 하지 말라..
+
+		}
+		else
+		{
+			event.cancelBubble=true; /*IE 7,8*/
+			//버블링을 하지 말라..
+		}
+	}
+</script>
+</head>			   <!-- ^ -->
+<!-- 	capturing|		|bubbling
+				 |		|
+				 |		|
+				 --------
+				targeting
+
+capture : 먼저수행되는 부모
+bubble : 남는부모
+target : 자신(capture가 있으면 capture먼저 수행되고 자신 수행)
+ --><body>
+<script>
+	document.onclick=ebbu //객체.이벤트 = 이벤트처리함수
+	/*하얀부분 아무데나 누르면 ebbu 수행*/
+</script>
+	<div onclick="mut1()">
+	나 어때~~~
+	</div>
+
+	<div onclick="mut2()">
+		<span onclick="sa();kajaCancel()"> <!-- event객체 -->
+			신상입은 나 어때~~ <!-- 두개가 나온다. -->
+			<!-- capturing이 있나 확인하고 sa()수행 후 mut()수행 후 document.onclick=ebbu수행 -->
+
+			<!-- event.stopPropagation(), event.cancelBubble=true 때문에 mut2()가 멈춤 -->
+		</span>
+	</div>
+</body>
+</html>

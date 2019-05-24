@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-*">
+	<title>여우야 많이 나와라 그리고 숨자</title>
+	<script>
+		function nawa()
+		{
+			var krim = document.createElement("img") //DOM <img //node를 생성하는 API
+			//img tag 추가됨
+			krim.setAttribute("src","krim/fox.jpeg") //<img src="fox.jpg"
+			//img tag의 src 정해줌
+			krim.setAttribute("id","foxfox")//<img src="fox.jpg" id='foxfox'> 
+			//img tag의 id 정해줌
+			//element.setAttrubute("속성","값")
+			
+			document.form1.appendChild(krim)
+			//여우그림을 누르면 이미지 2개 다음에
+			//<img src="fox.jpg" id="foxfox">
+			//<img src="fox.jpg" id="foxfox">
+			//<img src="fox.jpg" id="foxfox">
+			
+		}
+		function soomja()
+		{
+			/*var krim2 = document.getElementById("foxfox")
+			document.form1.removeChild(krim2)*/
+
+
+			if(document.getElementById("foxfox")) 
+			//node가 있는 경우만 //id "foxfox" 라는 객체를 만들 수 있으면 true가 된다.
+			//과연 지울 그림이 있는가를 묻는 부분
+			{
+				document.form1.removeChild(document.getElementById("foxfox"))
+				//element를 지우려면 부모노드를 찾아서 지워야한다. 
+				//form1 이라는 이름을 모를경우 그냥 parentNode.removeChild를 하면 편하다
+				//first node, last node : 지우고 싶은 노드를 맨앞,맨뒤로 정할 수도 있다. 
+				//document.form1.firstChild , document.form1.lastChild , document.form1.nextSibling , 
+				//document.form1.previousSibling , document.form1.contains(innode), node.hasChildNodes()
+			}
+
+			/*if(document.getElementById("foxfox"))
+			{
+				document.getElementById("foxfox").parentNode.removeChild(document.getElementById("foxfox"))
+			}*/
+		
+		}
+
+	</script>
+</head>
+<body>
+<form name=form1>
+	<img src="krim/fox.jpeg" width="40px" height="70px" onclick="nawa()">
+	<img src="krim/giraffe.jpg" width="80px" height="40px" onclick="soomja()">
+</form>
+</body>
+</html>

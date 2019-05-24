@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<script>
+		//동적 변경 연습
+		function nawa()
+		{
+			document.getElementById("fox1").innerHTML="<img src='krim/fox.jpeg' width='300px' height='500px'>"
+			//var fox11 = document.getElementById("fox1") //fox1 --> id이름
+			//fox11.innerHTML="<img src='krim/fox.jpeg' width='300px' height='500px'>"
+			//<div><img src="/krim/fox.jpeg"></div>
+			//alert(fox11.innerHTML)
+			
+		}
+		function kaja()
+		{
+			document.getElementById("textid1").innerHTML="<h1>짜자아안~~~~~~</h1>"
+			/*var t11 = document.getElementById("textid1")*/ //id이름
+			/*t11.innerHTML="<h1>짜자아안~~~~~~</h1>"*/
+			//t11.textContent="짜자아아안~~~~" //글자만, 디자인x
+		}
+
+	</script>
+<!-- 
+DOM : 	모든태그 접근가능
+		동적변경
+ -->
+</head>
+<body>
+
+	<!-- form tag 는 body에 여러개 나올 수 있음 -->
+	<form name=form1>
+		<!-- <img src="krim/fox.jpeg" width="300px" height="500px" onclick="nawa()"> -->
+		<input type="button" value="그림추가하자" onclick="nawa()">
+		<div id="fox1"></div> <!-- DOM에서 접근할 수 있게하기 위한 div --> 
+	</form>
+	<form>
+		<input type="button" value="문자를 추가하자" onclick="kaja()">
+		<div id="textid1"></div> <!-- DOM에서 접근할 수 있게하기 위한 div -->
+	</form>
+</body>
+</html>

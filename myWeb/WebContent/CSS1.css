@@ -1,0 +1,29 @@
+
+body
+{
+	background-color:pink;
+}
+#fdiv
+{
+	font-size:30px;
+}
+#sdiv
+{
+	font-size:20px;
+}
+.kongjoo
+{
+	font-size:25px;
+}
+
+/* 
+*****사용법*****
+
+선택자
+{
+	속성:값;
+	속성:값;
+				:
+				:
+}
+ */

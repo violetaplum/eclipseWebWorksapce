@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<script>
+//	tag
+//	<book>자바</book>
+//		<book>
+//		   |
+//		  자 바
+//		  gui
+//		  button b1 = 
+//		  
+//		  add(b1)   --> content pane 에 붙임
+
+		function kaja()
+		{
+			var moonja1 = document.createTextNode("문자가 없다가 이게 돌아갑니다")
+			//text만 추가된다. 스타일 혹은 그림은 넣을 수 없음.
+			document.getElementById("textid1").appendChild(moonja1)
+			//.appendChild(객체) : child로 자바에서처럼 붙여넣기 할 수 있다.
+			//그러면 div태그가 계속해서 붙게된다.   <div id="textid1">문자가없다가이게들어갑니다</div>
+		
+		}
+
+	</script>
+
+</head>
+<body>
+	<form name=form1>
+		<input type="button" value="문자를 추가하자" onclick="kaja()">
+		<div id="textid1"></div> <!-- DOM에서 접근할 수 있게하기 위한 div -->
+	</form>
+</body>
+</html>

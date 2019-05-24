@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		function kaja()
+		{
+			alert(document.getElementById("aa").innerText)//처리할 범위 표현
+			//.innerText : aa를 찾아가서 문자열을 가져옴
+			alert(document.getElementById("aa").innerHTML)
+			//.innerHTML : aa를 찾아가서 html코드 가져옴 단, id 이름붙은태그만 빼라
+			alert(document.getElementById("aa").outerText)
+			//.outerText : aa로가서 aa를 포함한 문자를 다 가져옴
+			alert(document.getElementById("aa").outerHTML)
+			//.outerHTML : aa로가서 id="aa" 까지 포함한 html 가져옴
+			alert(document.getElementById("aa").textContent)
+			//.textContent : aa로가서 디자인은 빼고 가져옴
+			//
+			//
+		}//IE 4분류 w3c 2종류만 채택, chrome은 다 서비스
+		//단, text처리를 위해서 textContent를 사용하면 된다.
+		
+	</script>
+</head>
+<body>
+<div></div>
+<div></div>
+
+<script>
+
+	alert("윈도우 화면크기 : "+window.screen.width+" "+window.screen.height)
+	//우선순위가 alert가 먼저기 때문에 글보다 먼저 alert가 나옴
+	//BOM 사용 : 윈도우 객체, 속성
+	//가로-그림가로/2, 세로-그림세로/2 좌표를 지정하면 화면중앙에 위치가능
+</script>
+
+<table id = "aa"> <!-- DOM : getElementById()를 사용하기기위해 id사용 -->
+	<tr> <!-- 행 -->
+		<th>love</th>
+	</tr>
+		<tr>
+			<td><h1 onclick="kaja()">
+			I love you </h1></td><!-- 열 -->
+		</tr>
+	</table>
+</body>
+</html>
