@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Daum 지도 시작하기</title>
+  <style>
+ *{ margin: 0;padding: 0}
+  </style>
+  <script>
+  	window.onload = function()
+  	{
+  		var joongang1 = new daum.maps.Latlng(37.573029, 126.990369)
+  		var markLocation = new google.maps.LatLng(37.573029, 126.990369);
+  		var mapDesign1 = {zoom:15,center:joongang1,mapTypeId:daum.maps.MapTypeId.ROADMAP}
+
+        var map = new daum.maps.Map(document.getElementById("jido1"),mapDesign1)
+  	}
+  </script>
+</head>
+<body>
+  <div id="map" style="width:800px;height:1000px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b73a8f9242e53f4cbd4be467c69c817a"></script>
+  <script>
+    var container = document.getElementById('map')
+    var options = {zoom:20,
+      center: new daum.maps.LatLng(37.573029, 126.990369),
+      level: 3
+    }
+    var map = new daum.maps.Map(container, options)
+  </script>
+  <div id="jido1" style="width:800px;height:1000px;">여기에 지도가 나온다</div>
+</body>
+</html>

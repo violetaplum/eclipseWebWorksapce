@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://maps.google.com.maps/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+		
+		window.onload = function()
+		{
+			var joongang1 = new google.maps.LatLng(37,126)
+			//해당 위도, 경도를 지도의 중앙으로 위치하기 위한것
+			var mapDesign1 = {zoom:15,
+				center:joongang1,
+				mapTypeId:google.maps.MapTypeId.ROADMAP}
+				//mapTypeId : google.maps.MapTypeId.HYBRID
+
+			var map = new google.maps.Map(document.getElementById("jido1"),mapDesign1)
+		}
+	</script>
+</head>
+<body>
+<div id="jido1" style="width:700px;height:700px">이안에 지도있다</div>
+</body>
+</html>

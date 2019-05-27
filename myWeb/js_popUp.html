@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		window.onload=function(){kaja()} //화면이 켜졌을때
+		function kaja()
+		{
+			window.open("./WebContent/popupWin.html","popupWin1", //별명주는일 : 열때마다 팝업창이 나올 수도 있기 때문
+				"width=370,height=300,top20,left=350,bgcolor=red, location=no")
+			//location=no를 해도 크롬에서 주소표시줄 보임, 보안문제때문
+			//window.open(팝업창url,alias(name),"크기,,,..") : 윈도우창을 여는것
+		}
+	</script>
+</head>
+<body style="background-color: violet">
+<h1>popup창열자</h1>
+	<pre>
+	팝업창이 멋있게 열리는 구만
+	팝업창이 멋있게 열리는 구만
+	팝업창이 멋있게 열리는 구만
+	</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<script>
+	//0:왼쪽 1:가운데 2:오른쪽 3:왼쪽+오른쪽...
+	function no_rbtn()
+	{
+		if((event.button==2)||(event.button==3))
+		{
+			alert("마우스 오른쪽 버튼 사용금지")
+		}	
+	}
+	document.onmousedown =no_rbtn //객체.이벤트=이벤트처리함수(핸들러)
+		//no_rbtn 뒤에 ()를 사용하면 안된다!!!  :  객체.속성=값 이기 때문
+
+</script>
+</head>
+<body onContextMenu="return false" 
+onDragStart="return false" 
+onSelectStart="return false" 
+onkeydown="return false">
+
+마우스 오른쪽 버튼 사용금지<br>
+	(예) www.bettle.co.kr 사이트
+</body>
+</html>

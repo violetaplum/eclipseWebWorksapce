@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		window.onload=function(){kaja()}
+		function kaja(){				//쿠키이름=쿠키값  
+			if(document.cookie.indexOf("annaneCookie=kongji1")==-1)
+
+				//alert(document.cookie) 쿠키 있는것 모두 확인해보기
+				//쿠키이름=쿠키값; 유효기간=....
+				//이런쿠키있냐=없으면 창문열림
+			{//if(navigator ....indexOf("Firefox")) ----> 현재 브라우저가 뭐지??
+				window.open("./js_cookie.html","cookieWin1","width=370,height=300,top=20,left=330,location=no") //쿠키를 처리함
+			}//위의 쿠키가 있으면 popup창은 안열린다.
+			//document.cookie 를 들어가면 모든 정보가 있음
+		}
+	</script>
+</head>
+<body style="background-color:pink">
+<h1>popup창열자</h1>
+	<pre>
+	팝업창이 멋있게 열리는 구만
+	팝업창이 멋있게 열리는 구만
+	팝업창이 멋있게 열리는 구만
+	</pre>
+</body>
+</html>

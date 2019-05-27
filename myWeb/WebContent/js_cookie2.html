@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		window.onlaod(cookieVal())
+		expireDate = new Date 
+expireDate.setMonth(expireDate.getMonth()+6) 
+hitCt = eval(cookieVal("pageHit")) 
+hitCt++ 
+document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString() 
+
+function cookieVal() { 
+thisCookie = document.cookie.split(";") 
+thisCookie=thisCookie+1
+
+document.write("hello?"+" "+thisCookie.length)
+}
+	count=toString(document.getElementById('h1'))
+
+	document.getElementById('body').setAttribut('h1',toString(parseInt(count)+1))
+	</script>
+</head>
+<body id="body" style="background-color:pink">
+<script language=javascript type="text/javascript">
+document.write("이곳은 "+thisCookie.length+" 번 방문 되었습니다.")
+</script>
+<h1 id="h1"></h1>
+</body>
+</html>
