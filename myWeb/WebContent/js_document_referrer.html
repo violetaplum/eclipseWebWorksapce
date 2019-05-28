@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		function kaja()
+		{
+			//반드시 거쳐야 할 페이지가 있다면
+			if(document.referrer&&document.referrer.indexOf("kaja.html")==-1)
+			{
+
+				alert("절차를 따라 잘 오셨군요")
+				alert("document.referrer : "+document.referrer)
+				//직전주소 갖고 있는 곳
+				//history : 전체 경로를 갖고있음
+				//referrer : 직전경로를 갖고있음
+				
+			}
+			else
+			{
+				/*alert("절차를 따라 잘 오셨군요")
+				alert("document.referrer : "+document.referrer)*/
+				
+				
+				alert("kaja.html 페이지를 거쳐서 오셔야 합니다.")
+				window.location.href='kaja.html'
+				//객체.속성=값
+			}
+		}
+
+	</script>
+</head>
+<body>
+<h3>document.referrer Test</h3>
+	<script type="text/javascript">
+		kaja();
+	</script>
+</body>
+</html>
